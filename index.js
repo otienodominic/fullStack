@@ -43,6 +43,6 @@ app.get('/api/cow/', cors(), async(req, res, next) => {
 // Create the server and serve
 const PORT = process.env.PORT || 3000;
 
-app.listen(PORT, () => {
+app.listen(PORT,cors(), () => {
     console.log(`Server up and running on Port ${PORT} This is just great!!`)
 })
